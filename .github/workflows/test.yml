@@ -21,4 +21,4 @@ jobs:
           node-version: "14"
 
       - run: npm ci
-      - run: npm jest
+      - run: npm test
