@@ -15,6 +15,7 @@ jobs:
           # NOTE!!! Cannot use secrets.GITHUB_TOKEN as it doesn't have enough scope permissions 
           # so a specific one has ot be created.
           # See https://github.com/ahmadnassri/action-dependabot-auto-merge/issues/33
+          # Demo on https://github.com/nextcloud/viewer/actions/workflows/dependabot-approve-merge.yml
           github-token: ${{ secrets.DEPENDABOT_AUTOMERGE_TOKEN }}
           command: 'squash and merge'
           target: minor
